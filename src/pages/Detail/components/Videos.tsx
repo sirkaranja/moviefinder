@@ -29,8 +29,8 @@ const Videos: FC<VideosProps> = ({ videos }) => {
               <iframe
                 src={`https://www.youtube.com/embed/${video.key}?enablejsapi=1&origin=http://127.0.0.1:5173/`}
                 title="trailer"
-                width="100%"
-                height="100%"
+                width="900%"
+                height="90%"
                 className="rounded-md"
                 allowFullScreen
               />
