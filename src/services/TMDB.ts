@@ -2,6 +2,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 import { API_KEY, TMDB_API_BASE_URL } from "@/utils/config";
 
+
+//fetching movies via the API from the env file
 export const tmdbApi = createApi({
   reducerPath: "tmdbApi",
   baseQuery: fetchBaseQuery({ baseUrl: TMDB_API_BASE_URL }),
