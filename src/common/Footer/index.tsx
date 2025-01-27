@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
 
             {/* Trending Section */}
             <div className="flex flex-col items-center text-white">
-              <h3 className="font-bold text-lg mb-4">Trending</h3>
+              <h3 className="font-bold text-lg mb-4">Trending Movies & Tv Series</h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
