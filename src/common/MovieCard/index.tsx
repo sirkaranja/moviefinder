@@ -30,7 +30,7 @@ const MovieCard = ({
           effect="zoomIn"
         />
 
-        {/* Play Button */}
+        {/* Play Button for coursel */}
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out flex justify-center items-center">
           <div className="text-red-600 text-4xl">
             <FaYoutube />
@@ -43,7 +43,7 @@ const MovieCard = ({
         {(title?.length > 50 ? title.split(":")[0] : title) || name}
       </h4>
 
-      {/* Rating */}
+      {/* Rating for movie or series */}
       <div className="flex justify-center items-center mt-2 space-x-2">
         <span className="text-yellow-400 text-sm font-semibold">
           {vote_average ? `${vote_average.toFixed(1)}/10` : "No Rating"}
