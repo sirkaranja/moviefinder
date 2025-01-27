@@ -33,7 +33,7 @@ const Image: React.FC<ImageProps> = ({
       height={height}
       width={width}
       className={cn(
-        "transition-all duration-300 ease-in",
+        "transition-all duration-200 ease-in",
         className,
         !isImageLoaded
           ? `opacity-0 ${effect === "zoomIn" ? "scale-95" : ""}`
