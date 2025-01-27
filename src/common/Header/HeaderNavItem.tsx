@@ -15,13 +15,14 @@ const HeaderNavItem = ({ link, showBg, isNotFoundPage }: HeaderProps) => {
         className={({ isActive }) => {
           return cn(
             "nav-link",
+            // Green hover effect when not active on navigation
             isActive
-              ? "" // No color change when the tab is active
+              ? ""
               : `${
                   isNotFoundPage || showBg
                     ? "text-[#444] dark:text-gray-300 dark:hover:text-[#00FF40] hover:text-[#00FF40]"
                     : "text-gray-300 hover:text-[#00FF40]"
-                }` // Green hover effect when not active
+                }` 
           );
         }}
         end
