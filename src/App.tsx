@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../src/Auth/firebaseConfig";  // Updated import path
 import Login from "../src/Auth/login";
-
+import SignUp from "./Auth/Signup";
 import {
   Header,
   Footer,
@@ -46,6 +46,7 @@ const App = () => {
               />
               <Route path="/:category" element={<Catalog />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<SignUp />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
