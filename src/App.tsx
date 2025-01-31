@@ -1,9 +1,9 @@
 import { lazy, Suspense, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../src/Auth/firebaseConfig";  // Updated import path
+import { auth } from "../src/Auth/firebaseConfig";
 import Login from "../src/Auth/login";
-import SignUp from "./Auth/Signup";
+import SignUp from './Auth/SignUp';
 import {
   Header,
   Footer,
@@ -20,6 +20,11 @@ const Catalog = lazy(() => import("./pages/Catalog"));
 const Home = lazy(() => import("./pages/Home"));
 const Detail = lazy(() => import("./pages/Detail"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+
+const ProtectedRoute = ({ children }) => {
+  const [user] = useAuthState(auth);
+  return user ? children : <Navigate to="/login" />;
+};
 
 const App = () => {
   const [user] = useAuthState(auth);
@@ -39,14 +44,14 @@ const App = () => {
         <ScrollToTop>
           <Suspense fallback={<Loader />}>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route
-                path="/:category/:id"
-                element={user ? <Detail /> : <Navigate to="/login" />}
-              />
-              <Route path="/:category" element={<Catalog />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
+
+              {/* Protected Routes */}
+              <Route path="/" element={<Home />} />
+              <Route path="/:category/:id" element={<ProtectedRoute><Detail /></ProtectedRoute>} />
+              <Route path="/:category" element={<ProtectedRoute><Catalog /></ProtectedRoute>} />
+
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

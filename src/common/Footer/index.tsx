@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <section
         className="relative w-full py-8"
         style={{
-          backgroundImage: `url('/path-to-avengers-background.jpg')`, // Path to Avengers background
+          backgroundColor: "#4e9f3d",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
