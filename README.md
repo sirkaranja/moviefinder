@@ -2,13 +2,8 @@
 # MovieFinder 🎬
 
 MovieFinder is a modern and dynamic web application designed to help users discover the latest movies and TV shows. Built with **React**, **TypeScript**, and **Tailwind CSS**, it offers a sleek and responsive user interface for an enhanced viewing experience.
-## Technologies Used
 
-- **ReactJS**: Frontend library for building the user interface.
-- **TMDb API**: We use The Movie Database (TMDb) API to fetch movie and TV series data.
-  - API Documentation: [TMDb API Docs](https://www.themoviedb.org/documentation/api)
-- **Firebase**: For handling user authentication (sign-up, login, etc.).
-  - Firebase Authentication documentation: [Firebase Auth Docs](https://firebase.google.com/docs/auth)
+
 ## Features ✨
 
 - **Latest Releases**: Stay updated with the newest movies and TV shows.
@@ -34,6 +29,10 @@ MovieFinder is a modern and dynamic web application designed to help users disco
 - **Frontend**: React with TypeScript
 - **Styling**: Tailwind CSS
 - **Development Tool**: Vite
+ - **TMDb API**: We use The Movie Database (TMDb) API to fetch movie and TV series data.
+  - API Documentation: [TMDb API Docs](https://www.themoviedb.org/documentation/api)
+- **Firebase**: For handling user authentication (sign-up, login, etc.).
+  - Firebase Authentication documentation: [Firebase Auth Docs](https://firebase.google.com/docs/auth)
 
 ## Figma Design 🎨
 
