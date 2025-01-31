@@ -10,6 +10,7 @@ MovieFinder is a modern and dynamic web application designed to help users disco
 - **Trending Section**: Explore what's trending worldwide.
 - **Search Functionality**: Quickly find details about your favorite movies and shows.
 - **Responsive Design**: Optimized for seamless viewing on all devices.
+- - **ATHENTICATION**
 
 ## Screenshots 📸
 
