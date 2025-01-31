@@ -15,8 +15,8 @@ MovieFinder is a modern and dynamic web application designed to help users disco
 - **Homepage**
 
 ![image](https://github.com/user-attachments/assets/1470669d-b42c-48d8-a296-3cca6cf1e1a5)
-
-
+ **Authentication**
+ ![image](https://github.com/user-attachments/assets/bd6e0796-c072-4730-b388-b36069957be1)
 - **Movie details Section**
 ![image](https://github.com/user-attachments/assets/832e0ef1-c764-4118-b41f-ab3f77c6ffe8)
 **Footer details Section**
